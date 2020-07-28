@@ -13,7 +13,9 @@ struct MemoryGameView: View {
     var body: some View {
         Grid(viewModel.cards) {card in
             CardView(card: card)
-                .onTapGesture {self.viewModel.choose(card: card)}
+                .onTapGesture {self.viewModel.choose(card: card)
+            }
+            .padding(5)
         }
         .foregroundColor(Color.orange)
         .font(Font.largeTitle)
