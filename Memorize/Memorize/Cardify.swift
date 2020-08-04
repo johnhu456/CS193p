@@ -40,6 +40,7 @@ struct Cardify: AnimatableModifier {
         get { rotation }
         set {rotation = newValue }
     }
+    
 }
 
 extension View {
